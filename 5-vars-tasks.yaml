@@ -7,10 +7,10 @@
   tasks:
     - name: print information
       ansible.builtin.debug:
-        msg: "I am learning {{Course}} from {{Trainer}} mode {{Location}}"
+        msg: "I am learning {{Course}} {{Location}} from {{Trainer}}"
         
     - name : Print over ride info
       vars:
         Course: Terraform
       ansible.builtin.debug:
-        msg: "I am learning {{Course}} from {{Trainer}} mode {{Location}}"     
+        msg: "I am learning {{Course}} {{Location}} from {{Trainer}}"     
