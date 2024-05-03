@@ -5,6 +5,6 @@
     Trainer: Navaneeth
     Duration: 120hrs
   tasks:
-    - name: print info
+  - name: print info
       ansible.builtin.debug:
       msg: "I am Learning {{Course}} from {{Trainer}}, Duration is {{Duration}}"  
