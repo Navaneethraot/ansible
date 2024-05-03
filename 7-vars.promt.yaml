@@ -1,5 +1,5 @@
 - name : variables from prompt
-  hosts: locahost
+  hosts: localhost
   vars_prompt:
   - name : Username
     prompt: Please enter Username
