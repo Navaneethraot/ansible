@@ -7,9 +7,9 @@
 #     ansible.builtin.debug:
 #       msg: " I am learning {{Course}} from {{Trainer}} Duration is {{Duration}}"
 
-- name : VAriables from file
+- name : variables from file
   hosts: localhost
-  var_files:
+  vars_files:
     - var.yaml
   tasks:
   - name : Print information
