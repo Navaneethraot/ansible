@@ -4,11 +4,11 @@
     Course: Terraform
     Trainer: Navaneeth
     Duration: 120hrs
-  # tasks:
-  #   - name: print info
-  #     ansible.builtin.debug:
-  #     msg: "I am Learning {{Course}} from {{Trainer}}, Duration is {{Duration}}"  
   tasks:
-  - name: print information
+  - name: print info
     ansible.builtin.debug:
-      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+      msg: "I am Learning {{Course}} from {{Trainer}}, Duration is {{Duration}}"  
+  # tasks:
+  # - name: print information
+  #   ansible.builtin.debug:
+  #     msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
