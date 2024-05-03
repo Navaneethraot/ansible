@@ -1,6 +1,6 @@
 - name : variables from prompt
   hosts: locahost
-  vars_promt:
+  vars_prompt:
   - name : Username
     prompt: Please enter Username
     private: false
