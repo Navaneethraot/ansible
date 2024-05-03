@@ -9,10 +9,9 @@
   - name: print Over ride information
     vars:
       Course: Terraform
-      Duration: 120 hrs
     ansible.builtin.debug:
       msg: "I am learning {{Course}}" from {{Trainer}} Duration is {{Duration}}" 
-  tasks:
+  
   - name: Print info
     ansible.builtin.debug:
       msg: "I am learning {{Course}} from {{Trainer}} Duration is {{Duration}}"       
