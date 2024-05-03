@@ -1,14 +1,26 @@
 - name: Variables
   hosts: localhost
   vars:
-    Course: Terraform
+    Course: Devops
     Trainer: Navaneeth
-    Duration: 120hrs
+    Duration: 120 hrs
   tasks:
   - name: print info
     ansible.builtin.debug:
-      msg: "I am Learning {{Course}} from {{Trainer}}, Duration is {{Duration}}"  
-  # tasks:
-  # - name: print information
-  #   ansible.builtin.debug:
-  #     msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+      msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
+
+
+#- name: Variables
+#   hosts: localhost
+#   vars:
+#     Course: Terraform
+#     Trainer: Navaneeth
+#     Duration: 120hrs
+#   tasks:
+#   - name: print info
+#     ansible.builtin.debug:
+#       msg: "I am Learning {{Course}} from {{Trainer}}, Duration is {{Duration}}"  
+#   # tasks:
+#   # - name: print information
+#   #   ansible.builtin.debug:
+#   #     msg: "Hi, We are learning {{Course}} from Trainer {{Trainer}}, Duration is {{Duration}}."
