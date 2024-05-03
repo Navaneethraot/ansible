@@ -1,10 +1,10 @@
-- name: variables from prompt
+- name : variables from prompt
   hosts: locahost
   vars_promt:
   - name : Username
-    Prompt: Please enter Username
+    prompt: Please enter Username
     private: false
-    Prompt: Please enter password
+    prompt: Please enter password
     private: true
   tasks:
   - name : Print info
