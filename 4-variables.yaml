@@ -1,7 +1,7 @@
 - name: Variables
   hosts: localhost
   vars:
-    Course: Devops
+    #Course: Devops
     Trainer: Navaneeth
     Duration: 120 hrs
   tasks:
