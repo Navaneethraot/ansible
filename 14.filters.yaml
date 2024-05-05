@@ -28,8 +28,8 @@
     numbers: {1,2,3,3,5,4}
   tasks:  
     - name: remove duplicates
-      ansible.builtin.set_fact:
-        msg: "{{numbers | unique | community.general.version_sort }}"
+      ansible.builtin.debug:
+        msg: "{{numbers | unique }}"
 
 - name: min max
   hosts: localhost
@@ -39,3 +39,15 @@
     - name: print min and max ages 
       ansible.builtin.debug:
         msg: "min age is {{age | min}}, max age is {{age | max}}"
+
+- name : convert dictionary into items/list
+  hosts: localhost
+  vars:
+    my_dict: 
+      Course: Ansible
+      Trainer: Navaneeth
+      Duration: "3 months"
+  tasks:
+  - name: convert 
+    ansible.builtin.debug:
+      msg: {{my_dict | dict2items}}   
