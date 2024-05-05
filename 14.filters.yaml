@@ -28,7 +28,7 @@
     numbers: {1,2,3,3,5,4}
   tasks:  
     - name: remove duplicates
-      ansible.builtin.debug:
+      ansible.builtin.set_fact:
         msg: "{{numbers | unique | community.general.version_sort }}"
 
 - name: min max
