@@ -20,4 +20,20 @@
   tasks:
   - name : convert into upper case
     ansible.builtin.debug:
-      msg: "{{greetings | upper }}" 
+      msg: "{{greetings | upper }}"
+
+- name: remove dup
+  hosts: localhost
+  vars:
+    numbers: {1,2,3,3,5,4}
+    - name: remove duplicates
+      ansible.builtin.debug:
+        msg: "{{numbers | unique}}"
+
+- name: min max
+  hosts: localhost
+  vars:
+    age: {11,25,36,35,58,48}
+    - name: print min and max ages 
+      ansible.builtin.debug:
+        msg: "min age is {{age | min}}, max age is {{age | max}}"
