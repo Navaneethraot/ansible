@@ -9,7 +9,7 @@
     Experience:
       Devops: 3
       AWS: 4
-      Ansible: 2
+      docker: 2
      projects: true
   tasks:
   - name : print Variables
