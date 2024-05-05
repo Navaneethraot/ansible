@@ -16,7 +16,7 @@
 #     ansible.builtin.debug:
 #       msg: "Course is {{COURSE}}", Tools Covered {{Tools}} Experience is {{experience}} is realtime project {{projects}}
 
-      - name: data types
+- name: data types
   hosts: localhost
   vars:
     Course: DevOps with AWS #string
