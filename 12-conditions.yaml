@@ -1,11 +1,11 @@
-- name: Conditions
-  hosts: web
-  become: yes
-  tasks:
-  - name : Check user exist or not
-    ansible.builtin.command: id expense
-    resgister: USER
-    ignore_errors: true  
+# - name: Conditions
+#   hosts: web
+#   become: yes
+#   tasks:
+#   - name : Check user exist or not
+#     ansible.builtin.command: id expense
+#     resgister: USER
+#     ignore_errors: true  
 
   # - name: print user info
   #   ansible.builtin.debug:
@@ -18,14 +18,14 @@
   #   ansible.builtin.debug:
   #     msg: "HEllo"
 
-  # - name: conditions
-  # hosts: web
-  # become: yes
-  # tasks:
-  # - name: check user exists or not
-  #   ansible.builtin.command: id expense
-  #   register: USER
-  #   ignore_errors: true
+- name: conditions
+  hosts: web
+  become: yes
+  tasks:
+  - name: check user exists or not
+    ansible.builtin.command: id expense
+    register: USER
+    ignore_errors: true
 
   # - name: print user information
   #   ansible.builtin.debug:
