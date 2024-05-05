@@ -22,7 +22,7 @@
 #       msg: "Hello"
 
 
--  name :Conditions
+-  name : Conditions
    hosts: localhosts
    become: yes
    tasks: 
