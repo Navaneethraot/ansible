@@ -16,3 +16,11 @@
       WISHES: " Moring from task variable"
     ansible.builtin.debug:
       msg: "Hello, Good{{WISHES}}"  
+
+      #Order of Preferences
+      # arguments
+      # task level
+      # variable file
+      # prompt
+      # playlevel
+      # inventory
