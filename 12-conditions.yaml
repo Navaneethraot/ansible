@@ -26,7 +26,7 @@
    hosts: localhosts
    become: yes
    tasks: 
-  - name: check user existance
+  - name : check user existance
     ansible.builtin.command: id expense
     register: USER
     irgnore_errors: true 
