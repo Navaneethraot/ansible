@@ -50,4 +50,4 @@
   tasks:
   - name: convert 
     ansible.builtin.debug:
-      msg: {{my_dict | dict2items}}   
+      msg: "{{my_dict | dict2items}}" 
