@@ -3,7 +3,7 @@
   vars:
     WISHES: " Morning from play variable"
   vars_prompt:
-    name: " Moring from prompt variable"
+  - name: " Moring from prompt variable"
     prompt: Please enter the wishes
     private: false
 
