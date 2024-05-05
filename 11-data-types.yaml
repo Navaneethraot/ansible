@@ -6,10 +6,10 @@
     - Linux
     - Shell
     - Ansible
-  #   Experience:
-  #     Devops: 3
-  #     AWS: 4
-  #     Ansible: 2
+    Experience:
+      Devops: 3
+      AWS: 4
+      Ansible: 2
   #    Realtimeproject: true
   # tasks:
   # - name : print Variables
