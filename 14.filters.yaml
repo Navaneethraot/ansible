@@ -1,9 +1,9 @@
-# - name: filters
-#   hosts: localhost
-#   tasks:
-#   - name: print default values
-#     ansible.builtin.debug:
-#       msg: " Hello {{Course | default ('Ansible')}}"
+- name: filters
+  hosts: localhost
+  tasks:
+  - name: print default values
+    ansible.builtin.debug:
+      msg: " Hello {{Course | default ('Ansible')}}"
 
 - name: lower case
   hosts: localhost
@@ -11,7 +11,7 @@
     greetings: "Goodmoring"
   tasks:
   - name : convert into lower case
-    ansibl.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{greetings | lower }}" 
 - name: Upper case
   hosts: localhost
@@ -19,5 +19,5 @@
     greetings: "Goodmoring"
   tasks:
   - name : convert into upper case
-    ansibl.builtin.debug:
+    ansible.builtin.debug:
       msg: "{{greetings | upper }}" 
