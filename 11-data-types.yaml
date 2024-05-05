@@ -10,7 +10,7 @@
       Devops: 3
       AWS: 4
       Ansible: 2
-  #    Realtimeproject: true
+     Realtimeproject: true
   # tasks:
   # - name : print Variables
   #   ansible.builtin.debug:
