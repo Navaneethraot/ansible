@@ -29,7 +29,7 @@
   tasks:  
     - name: remove duplicates
       ansible.builtin.debug:
-        msg: "{{numbers | unique}}"
+        msg: "{{numbers | unique | community.general.version_sort }}"
 
 - name: min max
   hosts: localhost
