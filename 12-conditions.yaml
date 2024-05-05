@@ -1,0 +1,20 @@
+- name: Conditions
+  hosts: localhost
+  become: yes
+  tasks:
+  - name: Check user exist or not
+    resgister: User
+    ignore_error: true  
+  - name: print user info
+    ansible.builtin.debug:
+      msg: "User.info : {{User}}"
+  - name : create User
+    ansible.builtin.command: add user
+    when: User.rc !=0 
+
+  - name: Hello
+    ansible.builtin.debug:
+      msg: "HEllo"
+
+      
+              
