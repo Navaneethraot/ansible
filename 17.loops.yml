@@ -6,8 +6,8 @@
     ansible.builtin.dnf:
       name: "{{item.name}}"
       state: "item.state"
-  loop:
+    loop:
 
-  - {name: 'mysql', state: 'latest' }
-  - {name: 'nginx', state: 'absent'}
-  - {name: 'postfix', state: 'absent'}   
+    - {name: 'mysql', state: 'latest' }
+    - {name: 'nginx', state: 'absent'}
+    - {name: 'postfix', state: 'absent'}   
