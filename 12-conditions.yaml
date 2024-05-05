@@ -3,6 +3,7 @@
   become: yes
   tasks:
   - name: Check user exist or not
+    ansible.builtin.command: id expense
     resgister: User
     ignore_error: true  
   - name: print user info
@@ -16,5 +17,4 @@
     ansible.builtin.debug:
       msg: "HEllo"
 
-      
-              
+
