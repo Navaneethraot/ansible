@@ -1,9 +1,10 @@
-- name: filters
-  hosts: localhost
-  tasks:
-  - name: print default values
-    ansible.builtin.debug:
-      msg: " Hello {{Course | default ('Ansible')}}"
+# - name: filters
+#   hosts: localhost
+#   tasks:
+#   - name: print default values
+#     ansible.builtin.debug:
+#       msg: " Hello {{Course | default ('Ansible')}}"
+
 - name: lower case
   hosts: localhost
   vars:
